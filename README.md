@@ -10,17 +10,17 @@
 
 ## 📁 Структура папок с прошивками (`ax55-v1-openwrt/`)
 
-В репозитории доступны как стабильная ветка OpenWrt 25.12, так и новейшая ветка **Core6.18** (ядро Linux 6.18):
+В репозитории доступны как **OpenWrt 25.12**, так и ветка **Core6.18** (ядро Linux 6.18):
 
 ### 1. 📂 `Stock/` (Стоковые прошивки TP-Link)
 * `tplink_archer-ax55-v1_telnet.bin` — Модифицированная стоковая прошивка для открытия Telnet-сервера и получения root.
 * `tplink_archer-ax55-v1_original.bin` — Заводская оригинальная прошивка для **полного восстановления к заводскому состоянию**.
 
-### 2. 📂 `Core6.18/` (🚀 Новейшая сборка на ядре Linux 6.18 Master) — **РЕКОМЕНДУЕТСЯ**
-Сборки на свежем ядре Linux 6.18.44 с полным комплексом аппаратных патчей (исправление холодного старта CMN PLL, тайминги свитча RTL8367S, драйвер USB 3.0 SuperSpeed PHY, автостарт Wi-Fi и сторожевой сервис свитча):
-* 📁 **`Core6.18/AmneziaPodkop/`** — Максимальная сборка ("Всё включено"): AmneziaWG 2.0 + sing-box + PBR + TProxy + nftset + curl/jq/ttyd.
-* 📁 **`Core6.18/Amnezia/`** — Сбалансированная сборка: AmneziaWG 2.0 + PBR + dnsmasq-full (nftset).
-* 📁 **`Core6.18/ClearOpenWrt/`** — Чистая ванильная сборка OpenWrt + LuCI + стандартный dnsmasq.
+### 2. 📂 `Core6.18/` (🚀 Сборка на ядре Linux 6.18 Master)
+Сборки на свежем ядре Linux 6.18.44:
+* 📁 **`Core6.18/AmneziaPodkop/`** — AmneziaWG 2.0 + sing-box + PBR + TProxy + nftset + curl/jq/ttyd.
+* 📁 **`Core6.18/Amnezia/`** — AmneziaWG 2.0 + PBR + dnsmasq-full (nftset).
+* 📁 **`Core6.18/ClearOpenWrt/`** — Чистая сборка OpenWrt + LuCI + стандартный dnsmasq.
 
 ### 3. 📂 `AmneziaPodkop/`, `Amnezia/`, `ClearOpenWrt/` (Ветка OpenWrt 25.12)
 Проверенные сборки на стабильной ветке OpenWrt 25.12.
